@@ -1,0 +1,21 @@
+3.positive or negative number
+
+
+
+// You are using Java
+import java.util.Scanner;
+class   Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        if(n>0){
+            System.out.print("this number is positive");
+        }else if(n<0){
+            System.out.print("this number is negative");
+        }else{
+            System.out.print("none of the above");
+        }
+    }
+    
+}
