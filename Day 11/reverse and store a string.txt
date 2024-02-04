@@ -1,0 +1,16 @@
+REVERSE AND STORE A STRING:
+
+
+// You are using Java
+import java.util.Scanner;
+class main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        
+        StringBuffer str = new StringBuffer(sc.nextLine());
+        int ans = Integer.parseInt( str.reverse().toString() ) ;
+        System.out.print( ans ) ;
+        
+    }
+}
