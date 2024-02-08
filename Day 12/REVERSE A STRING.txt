@@ -1,0 +1,10 @@
+REVERSE A STRING:
+
+import java.util.Scanner;
+class main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        StringBuffer str = new StringBuffer(sc.nextLine());
+        System.out.print(str.reverse());
+    }
+}
