@@ -1,0 +1,27 @@
+linked list:
+
+// You are using Java
+import java.util.*;
+class main{
+    public static void main(String[] args){
+        LinkedList<Character> li = new LinkedList<>();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=0;i<n;i++){
+            li.add(sc.next().charAt(0));
+        }
+        // System.out.print(li.get(4));
+        // li.remove(3);
+        // li.add(3,14);
+        
+        
+        // li.add(7);
+        // li.add(9);
+        System.out.println(li);
+        Collections.sort(li);
+        Collections.reverse(li);
+        for(char i : li){
+            System.out.println(i);
+        }
+    }
+}
