@@ -1,0 +1,34 @@
+EXPONENTIAL OF A NUMBER:
+
+// You are using Java
+import java.util.Scanner;
+class main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int base = sc.nextInt();
+        int expo = sc.nextInt();
+        int result= 1;
+        
+        System.out.print(Math.pow(base,expo));
+    }
+}
+
+
+2.without using formula
+
+// You are using Java
+import java.util.Scanner;
+class main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        int base = sc.nextInt();
+        int expo = sc.nextInt();
+        int result=1;
+        
+        for(int i=1;i<=expo;i++){
+            result*=base;
+        }
+        System.out.print(result);
+    }
+}
