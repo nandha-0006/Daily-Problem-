@@ -1,0 +1,38 @@
+Anagram :
+
+// You are using Java
+import java.util.*;
+class main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        String s1 = sc.nextLine();
+        String s2 = sc.nextLine();
+        
+        
+        boolean b =  true;
+        
+        if(s1.length()!=s2.length()){
+            
+            b = false;
+        }else{
+            
+            char a1[] = s1.toCharArray();
+            char a2[] = s2.toCharArray();
+            
+            Arrays.sort(a1);
+            Arrays.sort(a2);
+            
+            b = Arrays.equals(a1,a2);
+            
+        }
+        
+        if(b){
+            System.out.print("Anagram");
+        }else{
+            System.out.print("is not  Anagram ");
+        }
+        
+        
+    }
+}
